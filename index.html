@@ -404,107 +404,164 @@ Executed OTDR testing to identify faults in aerial and underground cabling.</p>
         <p>Tech professional with expertise in cybersecurity, network infrastructure, Android app development, and full-stack web development or Cloud Computing Expert Vmware Vsphere Expert. I bring secure, scalable, and innovative digital solutions for modern businesses.</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Passionate cybersecurity analyst and network engineer with hands-on experience in penetration testing, threat analysis, and securing enterprise networks. Certified in CEH, CCNA, and CCNP.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/my-profile-img.jpg" class="testimonial-img" alt="">
-                <h3>Muhammad Atif</h3>
-                <h4>CyberSecurity Analyst</h4>
-              </div>
-            </div><!-- professional item -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 50px 20px;
+      background: #f7f7f7;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .testimonial-item {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 15px auto;
+      object-fit: cover;
+      border: 4px solid #ddd;
+    }
+    .swiper-pagination {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .bi-quote {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Cloud specialist with advanced knowledge in VMware and vSphere. Experienced in building and managing scalable virtual infrastructures, ensuring high availability and operational efficiency across cloud and on-prem environments.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/kashif.jpg" class="testimonial-img" alt="">
-                <h3>Kashif Ali</h3>
-                <h4>Cloud Tech Expert</h4>
-              </div>
-            </div><!-- End professional item -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="swiper init-swiper">
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 5000
+        },
+        "slidesPerView": "auto",
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 20
+          },
+          "1200": {
+            "slidesPerView": 3,
+            "spaceBetween": 30
+          }
+        }
+      }
+    </script>
+    <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>📱 Android Development
-Android developer focused on creating efficient, user-friendly, and secure mobile applications using modern tools and APIs. Experienced in automation and ethical hacking tools for Android..</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/aliyan.jpg" class="testimonial-img" alt="">
-                <h3>Aliyan Shah</h3>
-                <h4>Flutter Developer</h4>
-              </div>
-            </div><!-- End professional item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>🌐 Web Development
-Web developer specializing in responsive design, backend systems, and SEO optimization. Builds dynamic web applications using Python, Flask, JavaScript, and modern frameworks..</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/rohullah.jpg" class="testimonial-img" alt="">
-                <h3>Rohullah Hamid</h3>
-                <h4>Web Dev Expert</h4>
-              </div>
-            </div><!-- End professional item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>A passionate problem-solver who leverages IoT to drive digital transformation in industries like smart cities, home automation, healthcare, and critical infrastructure protection.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/ilham.jpg" class="testimonial-img" alt="">
-                <h3>Ilham Hamid</h3>
-                <h4>IOT Expert</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
+      <div class="swiper-slide">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left">“</i>
+            Passionate cybersecurity analyst and network engineer with hands-on experience in penetration testing, threat analysis, and securing enterprise networks.
+            <i class="bi bi-quote quote-icon-right">”</i>
+          </p>
+          <img src="assets/img/my-profile-img.jpg" class="testimonial-img" alt="">
+          <h3>Muhammad Atif</h3>
+          <h4>CyberSecurity Analyst</h4>
         </div>
       </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left">“</i>
+            Cloud specialist with advanced knowledge in VMware and vSphere. Experienced in building and managing scalable virtual infrastructures.
+            <i class="bi bi-quote quote-icon-right">”</i>
+          </p>
+          <img src="assets/img/kashif.jpg" class="testimonial-img" alt="">
+          <h3>Kashif Ali</h3>
+          <h4>Cloud Tech Expert</h4>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left">“</i>
+            Android developer focused on creating efficient, user-friendly, and secure mobile applications using modern tools and APIs.
+            <i class="bi bi-quote quote-icon-right">”</i>
+          </p>
+          <img src="assets/img/aliyan.jpg" class="testimonial-img" alt="">
+          <h3>Aliyan Shah</h3>
+          <h4>Flutter Developer</h4>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left">“</i>
+            Web developer specializing in responsive design, backend systems, and SEO optimization.
+            <i class="bi bi-quote quote-icon-right">”</i>
+          </p>
+          <img src="assets/img/rohullah.jpg" class="testimonial-img" alt="">
+          <h3>Rohullah Hamid</h3>
+          <h4>Web Dev Expert</h4>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left">“</i>
+            IoT specialist passionate about smart cities, home automation, and industrial transformation.
+            <i class="bi bi-quote quote-icon-right">”</i>
+          </p>
+          <img src="assets/img/ilham.jpg" class="testimonial-img" alt="">
+          <h3>Ilham Hamid</h3>
+          <h4>IOT Expert</h4>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<!-- Swiper Init -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.init-swiper').forEach(swiperEl => {
+      const config = JSON.parse(swiperEl.querySelector('.swiper-config').textContent);
+      new Swiper(swiperEl, config);
+    });
+  });
+</script>
       
     </section><!-- /Testimonials Section -->
     <!-- Contact Section -->
