@@ -18,18 +18,25 @@
 </head>
 <body>
   <main class="profile-shell" id="top">
+    <nav class="site-nav" aria-label="Page navigation">
+      <a class="brand" href="#top"><span class="brand-mark">A</span><span>ATIF<span class="brand-separator">/</span>ONLINE</span></a>
+      <a class="nav-contact" href="mailto:atifat45@gmail.com">LET’S CONNECT <span>↗</span></a>
+    </nav>
     <article class="profile-card">
       <header class="profile-hero">
         <img src="atif-portrait.jpg" alt="Muhammad Atif" class="portrait" fetchpriority="high">
         <div class="hero-shade"></div>
-        <a class="share-link" href="mailto:atifat45@gmail.com?subject=Hello%20Atif" aria-label="Email Muhammad Atif">↗</a>
-        <div class="hero-label"><span class="online-dot"></span> PAKISTAN · OPEN TO CONNECT</div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <button class="share-link" id="share-profile" type="button" aria-label="Share this profile" title="Share this profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m0 0L8 7m4-4 4 4M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
+        <div class="hero-label"><span class="online-dot"></span><span>PAKISTAN</span><i></i><span>OPEN TO CONNECT</span></div>
+        <div class="hero-index">PERSONAL PROFILE <b>·</b> 2026</div>
       </header>
 
       <section class="intro" aria-labelledby="name">
-        <div class="intro-topline"><span class="monogram">A.</span><span class="intro-rule"></span><span class="intro-tag">A LITTLE ABOUT ME</span></div>
-        <h1 id="name">Muhammad Atif<span>.</span></h1>
-        <p>Community builder and technology enthusiast, bringing people and ideas together to build useful things.</p>
+        <div class="intro-topline"><span class="monogram">A.</span><span class="intro-rule"></span><span class="intro-tag">COMMUNITY · TECHNOLOGY · IDEAS</span></div>
+        <h1 id="name">Muhammad Atif<span class="name-period">.</span></h1>
+        <p class="intro-summary">I bring people and ideas together to build useful things. This is my corner of the internet — a good place to start if you’d like to know me or my work.</p>
+        <div class="focus-tags" aria-label="Areas of interest"><span>Community building</span><span>Technology</span><span>Digital projects</span></div>
         <nav class="social-shortcuts" aria-label="Social profiles">
           <a href="https://atifakhan.github.io/portfolio/#contact" target="_blank" rel="noopener noreferrer" aria-label="Personal website" title="Personal website"><span>◎</span></a>
           <a href="https://www.linkedin.com/in/muhammad-atif-06480515b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><span>in</span></a>
@@ -39,8 +46,8 @@
         </nav>
       </section>
 
-      <section class="links-section" aria-labelledby="work-heading">
-        <div class="section-heading"><span id="work-heading">MY WORK & EXPERTISE</span><span class="section-count">01 — 04</span></div>
+      <section class="links-section work-section" aria-labelledby="work-heading">
+        <div class="section-heading"><div><span class="section-kicker">EXPLORE</span><h2 id="work-heading">My work & expertise<span>.</span></h2></div><span class="section-count">01 <i></i> 04</span></div>
         <div class="link-list">
           <a class="link-row link-row-featured" href="https://atifakhan.github.io/portfolio/#contact" target="_blank" rel="noopener noreferrer"><span class="row-icon">↗</span><span class="row-copy"><strong>Portfolio</strong><small>My work, projects & story</small></span><span class="row-arrow">↗</span></a>
           <a class="link-row" href="https://atifakhan.github.io/atifakhan-supabase-portfolio/" target="_blank" rel="noopener noreferrer"><span class="row-icon">✳</span><span class="row-copy"><strong>Community builder</strong><small>Community projects & ideas</small></span><span class="row-arrow">↗</span></a>
@@ -50,7 +57,7 @@
       </section>
 
       <section class="links-section social-section" aria-labelledby="social-heading">
-        <div class="section-heading"><span id="social-heading">FIND ME AROUND THE WEB</span><span class="section-count">02 — 08</span></div>
+        <div class="section-heading"><div><span class="section-kicker">STAY IN THE LOOP</span><h2 id="social-heading">Around the web<span>.</span></h2></div><span class="section-count">02 <i></i> 08</span></div>
         <div class="link-list">
           <a class="link-row" href="https://www.linkedin.com/in/muhammad-atif-06480515b" target="_blank" rel="noopener noreferrer"><span class="row-icon brand-linkedin">in</span><span class="row-copy"><strong>LinkedIn</strong><small>Professional updates</small></span><span class="row-arrow">↗</span></a>
           <a class="link-row" href="https://x.com/atifat45" target="_blank" rel="noopener noreferrer"><span class="row-icon">𝕏</span><span class="row-copy"><strong>X</strong><small>Thoughts & conversations</small></span><span class="row-arrow">↗</span></a>
@@ -64,12 +71,26 @@
       </section>
 
       <footer class="profile-footer">
-        <a class="email-link" href="mailto:atifat45@gmail.com"><span>LET’S TALK</span><strong>atifat45@gmail.com</strong><b>↗</b></a>
+        <div class="contact-panel"><div class="contact-decoration">✳</div><span class="section-kicker">HAVE A PROJECT OR AN IDEA?</span><h2>Let’s make something<br><em>meaningful.</em></h2><a class="email-link" href="mailto:atifat45@gmail.com"><span>GET IN TOUCH</span><strong>atifat45@gmail.com</strong><b>↗</b></a></div>
         <div class="footer-bottom"><a href="tel:+923149881406">+92 314 988 1406</a><span>MADE WITH CARE · © <span id="year">2026</span></span><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </article>
     <p class="page-note">ONE PLACE TO FIND ME, WHEREVER YOU ARE.</p>
   </main>
+  <div class="toast" id="share-toast" role="status" aria-live="polite">Profile link copied</div>
+  <script>
+    const shareButton = document.querySelector('#share-profile');
+    const shareToast = document.querySelector('#share-toast');
+    shareButton.addEventListener('click', async () => {
+      const shareData = { title: document.title, text: 'Connect with Muhammad Atif', url: location.href };
+      try {
+        if (navigator.share) await navigator.share(shareData);
+        else { await navigator.clipboard.writeText(location.href); shareToast.classList.add('is-visible'); setTimeout(() => shareToast.classList.remove('is-visible'), 2400); }
+      } catch (error) {
+        if (error.name !== 'AbortError') { shareToast.textContent = 'Copy this page link from your browser'; shareToast.classList.add('is-visible'); setTimeout(() => shareToast.classList.remove('is-visible'), 2400); }
+      }
+    });
+  </script>
 </body>
 </html>
 
